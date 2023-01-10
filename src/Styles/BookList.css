@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.bookContainer{
+    background-image: url('/public/Images/Book4.jpg');
+    background-size: 1350px 600px;
+}
+.bookContainer h2{
+    color: white;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 23px;
+}
+.bookContainer_head{
+    background-color: rgb(39, 37, 37);
+    height: 100px;
+    margin: auto;
+}
+.bookContainer_h1{
+    font-family: 'Yeon Sung', cursive;
+    font-size: 60px;
+    margin: 8px 0 0 0; 
+    color: rgb(0, 255, 234);
+}
+
+
+.bookList{
+    display: flex;
+    background-image: linear-gradient(to bottom right,
+    rgba(88, 250, 110, 0.5),rgba(59, 255, 213, 0.966));
+    margin: 10px;
+    border-radius: 25px 25px 25px 25px;
+    width: 73%;
+}
+
+.bookImg{
+    margin: 10px;
+}
+.bookImg>img{
+    height: 230px;
+    width: 180px;
+    border-radius: 15px;
+}
+.book_contents{
+    display: inline;
+    text-align: left;
+    padding-left: 20px;
+    width: 600px;
+}
+.book_contents >h2{
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: blue;
+}
+
+.but{
+    margin: auto;
+}
+.but>button{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid red;
+    border-radius: 25px 5px;
+}
+
+.but>button:hover{
+    border-radius: 25px 5px;
+    background-color: rgba(255, 0, 255, 0.699);
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    font-family: 'Righteous', cursive;
+}
+
+
+
+.but>button:active{
+    text-shadow: none;
+}

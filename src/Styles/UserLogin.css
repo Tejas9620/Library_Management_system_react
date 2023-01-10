@@ -1,0 +1,80 @@
+.userLogin {
+    background-image: url("/public/Images/Book4.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 625px;
+    height: 625px;
+    opacity: 0.8;
+}
+
+.userformContainer {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(85, 85, 85, 0.4),
+            rgba(85, 85, 85, 0.1));
+    background-size: 1100px 500px;
+    margin-top: 50px;
+    border-radius: 30px;
+    height: 500px;
+    width: 1100px;
+}
+
+.userloginH1 {
+    font-family: "Yeon Sung", cursive;
+    color: aliceblue;
+    font-size: 40px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.userloginH1 h1 {
+    margin: 0;
+}
+
+.userform {
+    height: 380px;
+}
+
+.userform form {
+    display: inline-block;
+    height: 350px;
+    width: 500px;
+}
+
+.userformContainer .useremail,
+.userpassword {
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.useremail input,
+.userpassword input {
+    border: 2ps solid greenyellow;
+    outline: none;
+    padding: 6px;
+    border-radius: 30px;
+    width: 250px;
+}
+
+.userbutton button {
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.userform .userbutton>button {
+    padding: 10px 70px;
+    border-radius: 25px 5px;
+    font-size: 30px;
+    color: #000;
+    background-color: rgba(0, 255, 247, 0.792);
+    font-family: serif;
+}
+
+.userbutton>button:hover {
+    box-shadow: 5px 5px 5px rgba(0, 255, 225, 0.547);
+}
+
+.useremail>input:focus, .userpassword>input:focus{
+    padding: 13px;
+    font-size: 22px;
+    width: 320px;
+  }

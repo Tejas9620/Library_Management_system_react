@@ -1,0 +1,76 @@
+
+
+.adminLogin {
+  background-image: url("/public/Images/admin.jpg");
+  background-repeat: no-repeat;
+  background-size: 1366px 625px;
+  height: 625px;
+  opacity: 0.8;
+}
+.adminformContainer {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(85, 85, 85, 0.4), rgba(85, 85, 85, 0.1));
+  background-size: 1100px 500px;
+  margin-top: 50px;
+  border-radius: 30px;
+  height: 500px;
+  width: 1100px;
+}
+.adminloginH1{
+  font-family: 'Yeon Sung', cursive;
+  color: aliceblue;
+  font-size: 40px;
+  height: 100px;
+  margin-top: 20px;
+}
+.adminloginH1 h1{
+    margin: 0;
+}
+
+.adminform{
+    height: 380px;
+}
+
+.adminform form{
+    display: inline-block;
+    height: 350px;
+    width: 500px
+}
+
+.adminformContainer .email,.password{
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.email input,.password input{
+  border: 2ps solid greenyellow;
+  outline: none;
+  padding: 6px;
+  border-radius: 30px;
+  width: 250px;
+  transition: 0.5s;
+}
+.button button{
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.adminform .button>button{
+  padding: 10px 70px;
+  border-radius: 25px 5px ;
+  font-size: 30px;
+  color: #000;
+  background-color: rgba(0, 255, 247, 0.792);
+  font-family: serif;
+}
+
+.button>button:hover{
+  box-shadow: 5px 5px 5px rgba(0, 255, 225, 0.547);
+}
+
+.email>input:hover, .password>input:hover{
+  padding: 13px ;
+  font-size: 20px;
+  width: 320px;
+}
