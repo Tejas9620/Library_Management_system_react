@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../Styles/BookList.css";
 const BookList = () => {
     let [books, setBooks] = useState([]);
 
+    let location = useLocation()
+
+
     let navigate = useNavigate();
+
+
     useEffect(() => {
         let fetchData = async () => {
             let response = await fetch("http://localhost:4001/books");
@@ -13,6 +18,8 @@ const BookList = () => {
         };
         fetchData();
     }, [books]);
+
+
     let handleClick = async (id, title) => {
         fetch(`http://localhost:4001/books/${id}`, {
             method: "DELETE",
@@ -21,7 +28,12 @@ const BookList = () => {
     };
 
     let check = (id) => {
-        navigate(`/admin/bookList/${id}`);
+        if (location.pathname === '/admin/bookList') {
+            navigate(`/admin/bookList/${id}`);
+        }
+        else {
+            navigate(`/user/bookList/${id}`);
+        }
     };
     return (
         <div className="bookContainer">
@@ -47,16 +59,8 @@ const BookList = () => {
                             <h5>PageCount: {data.pageCount}</h5>
                         </div>
                         <div className="but">
-                            <button
-                                onClick={() => {
-                                    handleClick(data.id, data.title);
-                                }}
-                            >
-                                Remove
-                            </button>
-                            <button onClick={() => check(data.id)} swsd>
-                                Read More
-                            </button>
+                            {location.pathname ==='/admin/bookList' && <button onClick={() => {handleClick(data.id, data.title)}}>Remove</button>}
+                            <button onClick={() => check(data.id)}>Read More</button>
                         </div>
                     </div>
                 ))}

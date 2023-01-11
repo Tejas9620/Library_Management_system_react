@@ -6,7 +6,7 @@ const UserLogin = () => {
     let navigate = useNavigate()
     
     let login = () => {
-        navigate('/Users/')
+        navigate('/user/')
     }
     return (
         <div className="userLogin">
@@ -17,7 +17,7 @@ const UserLogin = () => {
                 <div className="userform">
                     <form onSubmit={login}>
                         <div className="useremail">
-                            <input type="text" required placeholder="Enter Email/phone" />
+                            <input type="email" required placeholder="Enter Email/phone" />
                         </div>
                         <div className="userpassword">
                             <input type="password" required placeholder="Enter Password" />
