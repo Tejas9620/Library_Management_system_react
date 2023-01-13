@@ -32,11 +32,13 @@ const AdminLogin = () => {
                 </div>
                 <div className="adminform">
                     <form onSubmit={Login}>
+                        <div className="inputs">
                         <div className="email">
                             <input type="text" required value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Enter Email/phone" />
                         </div>
                         <div className="password">
                             <input type="password" required value={password} onChange={(p) => { setPassword(p.target.value) }} placeholder="Enter Password" />
+                        </div>
                         </div>
                         <div className="button">
                             <button>LOGIN</button>

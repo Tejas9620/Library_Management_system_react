@@ -9,19 +9,17 @@
 .userformContainer {
     display: inline-block;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(85, 85, 85, 0.4),
-            rgba(85, 85, 85, 0.1));
-    background-size: 1100px 500px;
-    margin-top: 50px;
+    background-image: linear-gradient(rgba(88, 88, 88, 0.8),
+            rgba(88, 88, 88, 0.411));
+    background-size: 600px 500px;
+    margin: 50px 800px auto auto;
     border-radius: 30px;
-    height: 500px;
-    width: 1100px;
 }
 
 .userloginH1 {
     font-family: "Yeon Sung", cursive;
     color: aliceblue;
-    font-size: 40px;
+    font-size: 25px;
     height: 100px;
     margin-top: 20px;
 }
@@ -48,11 +46,11 @@
 
 .useremail input,
 .userpassword input {
-    border: 2ps solid greenyellow;
     outline: none;
     padding: 6px;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 250px;
+    transition: 0.5s;
 }
 
 .userbutton button {
@@ -60,21 +58,21 @@
     transition: 0.5s;
 }
 
-.userform .userbutton>button {
-    padding: 10px 70px;
-    border-radius: 25px 5px;
+.userbutton>button {
+    padding: 6px 30px;
+    border-radius: 15px 15px;
     font-size: 30px;
     color: #000;
     background-color: rgba(0, 255, 247, 0.792);
     font-family: serif;
 }
-
-.userbutton>button:hover {
-    box-shadow: 5px 5px 5px rgba(0, 255, 225, 0.547);
+.userbutton>button:hover{
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-
-.useremail>input:focus, .userpassword>input:focus{
-    padding: 13px;
-    font-size: 22px;
-    width: 320px;
-  }
+.useremail>input:focus,
+.userpassword>input:focus {
+    font-size: 15px;
+    padding: 8px;
+    width: 270px;
+}

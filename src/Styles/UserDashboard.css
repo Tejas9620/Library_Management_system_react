@@ -1,0 +1,12 @@
+.userDashboard{
+    background-image: url(/public/Images/Book6.jpg);
+    background-size: 1366px 530px;
+    height: 530px;
+    width: 1366px;
+    background-repeat: no-repeat;
+}
+
+.innerDash{
+    border: 2px solid yellow;
+    background-color: #fff;
+}

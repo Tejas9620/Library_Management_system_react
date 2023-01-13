@@ -4,7 +4,9 @@
 .adminNav{
     background-color: rgb(217, 236, 238);
     height: 64px;
-    margin-top: 10px;
+    margin-top: 10px; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.22);
 }
 .navbar{
